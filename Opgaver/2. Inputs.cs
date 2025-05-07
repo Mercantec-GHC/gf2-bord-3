@@ -33,9 +33,17 @@ namespace Opgaver
             Console.WriteLine(
                 "Lav et program som gemmer et input som et tal og skriver tallet ud i konsollen"
             );
-
+               
             Console.WriteLine("Indtast et tal: ");
-            // Lav opgaven herunder!
+            // Lav opgaven herunder! 
+            Console.WriteLine("Type a number: ");
+
+            string input = Console.ReadLine()!; 
+            
+            if (int.TryParse(input, out int number)) 
+            {
+                Console.WriteLine("You have typed a number" + number);
+            }
         }
 
         public static void Double1()
@@ -46,6 +54,14 @@ namespace Opgaver
 
             Console.WriteLine("Indtast et decimaltal: ");
             // Lav opgaven herunder!
+            Console.WriteLine("Type a number: ");
+
+            string input = Console.ReadLine()!;
+
+            if (decimal.TryParse(input, out decimal number))
+            {
+                Console.WriteLine("You have typed a decimal" + number);
+            }
         }
 
         public static void Bool1()
